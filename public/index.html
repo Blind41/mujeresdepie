@@ -1,43 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujeres De Pie 2023</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
+<body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <header>
+        <h1>Violencia de Género y Violencia Doméstica</h1>
+        <img src="WhatsApp Image 2023-11-03 at 15.07.15 (2).jpg">
+    </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <nav>
+        <ul>
+            <a href="#informacion">Información</a>
+            <div id="border"></div>
+            <a href="#signos">Signos de Violencia y Tipos</a>
+            <div id="border"></div>
+            <a href="#recursos">Recursos y Apoyo</a>
+            <div id="border"></div>
+            <!--<a href="#prevencion">Prevención</a>
+            <div id="border"></div>-->
+            <a href="#historias">Historias</a>
+        </ul>
+    </nav>
+
+    <section id="informacion">
+        <h2>Información</h2>
+        <p>La violencia de género y la violencia doméstica son problemas graves que afectan a millones de personas en todo el mundo. Aquí encontrará información esencial para comprender estos problemas.</p>
+        <ul>
+            <li><span id="title-span">Violencia de Género:</span><p>
+                <a><span> La violencia de género se refiere a cualquier acto de violencia basado en el género que resulta o puede resultar en daño físico, sexual o psicológico para las personas, afectando desproporcionadamente a mujeres y niñas. Puede manifestarse de diversas formas, como violencia física, sexual, psicológica, económica y patrimonial.</a>
+            </li>
+        </ul>
+        <ul>
+            <li><span id="title-span">Violencia Doméstica:</span><p>
+                <a><span> La violencia doméstica se refiere a los comportamientos abusivos y coercitivos que ocurren en el ámbito del hogar, afectando a miembros de una familia o a personas que comparten una residencia. Esta forma de violencia puede ocurrir entre parejas, padres e hijos, hermanos u otros convivientes, y no discrimina por género, edad, orientación sexual o nivel socioeconómico.</a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="signos">
+        <h2>Signos de Violencia y Tipos</h2>
+        <p>Los signos de violencia de género pueden variar, y es importante estar atento/a a posibles indicadores. </p>
+        <p> fundamental recordar que la violencia de género puede ser física, emocional, sexual o económica. Aquí hay algunos signos comunes:</p>
+        
+        <div id="carroussel">
+            <article id="gallery">
+                <button id="atras"><</button>
+                <div id="gallery-container">
+                    <img id="imgs" src="tipos.jpeg" class="active">
+                    <img id="imgs" src="sexual.jpeg">
+                    <img id="imgs" src="economica.jpeg">
+                    <img id="imgs" src="fisica.jpeg">
+                    <img id="imgs" src="psicologica.jpeg">
+                </div>
+                <div id="markers-container">
+                    <div id="markers">
+                        <a id="a" class="active">●</a>
+                        <a id="a">●</a>
+                        <a id="a">●</a>
+                        <a id="a">●</a>
+                        <a id="a">●</a>
+                    </div>
+                </div>
+                <button id="adelante">></button>
+            </article>
+        </div>
+
+        <ul>
+            <li><span id="title-span">Violencia Física:</span><p>
+                <a><span> Moretones, fracturas, cortaduras u otras lesiones inexplicadas.<br><br>
+                Uso Excesivo de Ropa: Intentos de ocultar lesiones con ropa, incluso en clima cálido.</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li><span id="title-span">Violencia Emocional o Psicológica:</span><p>
+                <a><span>Control Excesivo: El agresor/a intenta controlar todos los aspectos de la vida de la víctima, incluyendo su tiempo, amistades y actividades.<br><br>
+                Insultos y Humillaciones: Comentarios despectivos o humillantes destinados a socavar la autoestima de la víctima.<br><br>
+                Aislamiento Social: Intentos de aislar a la víctima de amigos, familiares u otros sistemas de apoyo.<br><br>
+                Amenazas Constantes: Amenazas verbales de daño físico, emocional o sexual.</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li><span id="title-span">Violencia Sexual:</span><p>
+                <a><span>Coerción Sexual: Obligar o presionar a la víctima para participar en actividades sexuales en contra de su voluntad.<br><br>
+               Violación: Forzar a la víctima a tener relaciones sexuales sin su consentimiento.</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li><span id="title-span">Violencia Económica:</span><p>
+                <a><span>Control Financiero: Limitar el acceso de la víctima a recursos económicos o utilizar el dinero como una herramienta de control.<br><br>
+                Sabotaje Laboral: Interferir con el empleo de la víctima o su capacidad para mantener un trabajo.</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li><span id="title-span">Cambios en el Comportamiento de la Víctima:</span><p>
+                <a><span>Ansiedad o Depresión: Síntomas de salud mental, como ansiedad, depresión o cambios de humor.<br><br>
+                Evitar Conversaciones sobre el Agresor/a: La víctima puede evitar hablar sobre la relación o el agresor/a.</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li><span id="title-span">Otros Indicadores:</span><p>
+                <a><span>Dificultad para Tomar Decisiones: La víctima puede parecer indecisa o temerosa de tomar decisiones.<br><br>
+                Apariencia Descuidada: La falta de atención al aspecto personal podría indicar problemas relacionados con la violencia de género.</a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="recursos">
+        <h2>Recursos y Apoyo</h2>
+        <p>Encuentre información sobre organizaciones de apoyo, líneas de ayuda y servicios que brindan asistencia a las víctimas de violencia de género.</p>
+        <img src="WhatsApp Image 2023-11-03 at 15.07.15_5b05251c.jpg">
+    </section>
+
+    <!-- <section id="prevencion">
+        <h2>Prevención y Educación</h2>
+        <p>Descubra estrategias para prevenir la violencia de género y programas de educación y capacitación disponibles.</p>
+        
+    </section> -->
+
+    <section id="historias">
+        <h2>Historia de Superviviente</h2>
+        <p>Una historia inspiradora de supervivencia y resiliencia es la de Malala Yousafzai, aunque no ha sido una víctima de violencia de género doméstica en el sentido clásico, su historia refleja la lucha contra la violencia de género y la búsqueda de la educación para las mujeres.<br><br>
+
+            Malala, nacida en Pakistán en 1997, se convirtió en una destacada defensora de los derechos de las niñas a recibir educación. A una edad temprana, el grupo extremista talibán tomó el control de su región y prohibió la educación para las niñas. A pesar de las amenazas y peligros, Malala continuó abogando por la educación de las niñas a través de un blog anónimo para la BBC urdu.<br><br>
+            
+            En octubre de 2012, cuando Malala tenía solo 15 años, fue atacada por un pistolero talibán mientras regresaba a casa en autobús después de la escuela. Malala sufrió graves heridas en la cabeza y el cuello. Su valentía y determinación la llevaron a recuperarse y a continuar su lucha por la educación.<br><br>
+            
+            Malala se ha convertido en un símbolo global de la resistencia y la lucha por los derechos de las mujeres. En 2014, se convirtió en la persona más joven en recibir el Premio Nobel de la Paz. Su historia destaca la importancia de desafiar la violencia de género y abogar por la igualdad de oportunidades, especialmente en el acceso a la educación.</p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 <a href="https://www.instagram.com/mujeresdepie23/">INSTAGRAM</a> </p><br>
+        <span>Proyecto: Mujeres De Pie</span>
+        <br><br>
+        <span>Propuesta del proyecto:</span>
+        <ul>
+            <li>Erica Andrada
+            </li>
+            <li>Loana Arellano
+            </li>
+            <li>Damaris Avalos
+            </li>
+            <li>Alicia Encino
+            </li>
+            <li>Marita Guzmán
+            </li>
+            <li>Emilia Martin
+            </li>
+            <li>Santiago Yacante
+            </li>
+        </ul>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
 </html>
